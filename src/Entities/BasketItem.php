@@ -13,10 +13,10 @@ class BasketItem
     public int $quantity;
 
     const array DEFAULT_ITEMS = [
-      'R01' => [
-          'name' => 'Red Widget',
-          'price' => 3295,
-      ],
+        'R01' => [
+            'name' => 'Red Widget',
+            'price' => 3295,
+        ],
         'G01' => [
             'name' => 'Green Widget',
             'price' => 2495,

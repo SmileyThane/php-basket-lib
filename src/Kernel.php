@@ -74,7 +74,7 @@ class Kernel
     /**
      * @throws JsonException
      */
-    public static function handleRequestBody():array
+    public static function handleRequestBody(): array
     {
         if (file_get_contents('php://input')) {
             $requestBody = json_decode(file_get_contents('php://input'), true, 512, JSON_THROW_ON_ERROR);

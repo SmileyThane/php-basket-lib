@@ -10,6 +10,7 @@ use Kernel;
 class BasketService
 {
     private Basket $basket;
+
     public function __construct()
     {
         $this->basket = new Basket();
@@ -24,7 +25,7 @@ class BasketService
         return $this->basket->create();
     }
 
-    final public function addDefaultItem(string $id):void
+    final public function addDefaultItem(string $id): void
     {
         $request = Kernel::handleRequestBody();
         if (!empty($request['code']) && $request['quantity'] > 0) {
@@ -44,7 +45,7 @@ class BasketService
         $this->basket->update($id, $basket);
     }
 
-    final public function removeItem(string $basketId, string $itemId):void
+    final public function removeItem(string $basketId, string $itemId): void
     {
         $basketItem = new BasketItem();
         $basketItem->id = $itemId;
@@ -56,13 +57,13 @@ class BasketService
     /**
      * @throws JsonException
      */
-    final public function find(string $id):array
+    final public function find(string $id): array
     {
         return $this->basket->find($id);
     }
 
 
-    final public function delete(string $id):void
+    final public function delete(string $id): void
     {
         $this->basket->delete($id);
     }

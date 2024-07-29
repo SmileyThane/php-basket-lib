@@ -8,6 +8,7 @@ use Helpers\PriceHelper;
 class DeliveryService
 {
     use PriceHelper;
+
     private Basket $basket;
 
     const array PRICE_STEPS = [
@@ -20,7 +21,7 @@ class DeliveryService
         $this->basket = new Basket();
     }
 
-    final public function calculate(string $basketId, int $withBasketPrice = 1):float|int
+    final public function calculate(string $basketId, int $withBasketPrice = 1): float|int
     {
         $basketPrice = $this->basket->calculateTotalPrice($basketId);
         $deliveryPrice = 0;

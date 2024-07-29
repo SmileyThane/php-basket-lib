@@ -90,14 +90,14 @@ class Basket
         return $total;
     }
 
-    private function calculateDiscount(array $prettifiedItem):float|int
+    private function calculateDiscount(array $prettifiedItem): float|int
     {
         $discount = 0;
-        if(
+        if (
             $prettifiedItem['quantity'] > 1 &&
             in_array($prettifiedItem['code'], BasketItem::CODES_WITH_HALF_PRICE_DISCOUNT, true)
         ) {
-           $discount = ($prettifiedItem['price'] / 2) * (int)($prettifiedItem['quantity'] / 2);
+            $discount = ($prettifiedItem['price'] / 2) * (int)($prettifiedItem['quantity'] / 2);
         }
 
         return $discount;
