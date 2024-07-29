@@ -34,7 +34,9 @@ Released:
 
 ## Examples
 You can check results in stored samples (`Storage` folder)
+
 or
+
 run ``` vendor/phpunit/phpunit/phpunit src/Tests/TotalPriceTest.php ```
 
 | File  | Products | Total |
