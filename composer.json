@@ -1,0 +1,17 @@
+{
+  "name": "smileythane/php-basket-lib",
+  "description": "Mini basket API written on PHP",
+  "minimum-stability": "stable",
+  "license": "free",
+  "authors": [
+    {
+      "name": "smileythane",
+      "email": "hleb@prakhnitski.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  }
+}
