@@ -38,6 +38,6 @@ You can check results in stored samples (`Storage` folder)
 | File  | Products | Total |
 | ------------- | ------------- | ------------- | 
 | 6dff618d31e59eb6229085aab5d0280f3bfb83b755ce7d6bae29500f5914fd76 | [B01, G01] | 37.85 |
-| dcc5de2d8ae371ca1904d916f339cbb18ae6ec5f65fa4a744a4039719153d264 | [R01, G01] | 54.37 |
-| 5352e8ba9b18a56f07eb57108d027a3e22c999e2548434615cad6d553b7cd682 | [R01, R01] | 60.85 |
+| dcc5de2d8ae371ca1904d916f339cbb18ae6ec5f65fa4a744a4039719153d264 | [R01, G01] | 60.85 |
+| 5352e8ba9b18a56f07eb57108d027a3e22c999e2548434615cad6d553b7cd682 | [R01, R01] | 54.37 |
 | 2bedd09a06391c1feac325de905a467f36d652e6a9cd5f97fc36fb28850d897f | [B01, B01, R01, R01, R01] | 98.27 |
