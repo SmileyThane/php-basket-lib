@@ -87,7 +87,7 @@ class Basket
             $total += ($prettifiedItem['price'] * $prettifiedItem['quantity']) - $this->calculateDiscount($prettifiedItem);
         }
 
-        return $total;
+        return (int)$total;
     }
 
     private function calculateDiscount(array $prettifiedItem): float|int
