@@ -23,7 +23,6 @@ class DeliveryService
     final public function calculate(string $basketId, int $withBasketPrice = 1):float|int
     {
         $basketPrice = $this->basket->calculateTotalPrice($basketId);
-        var_dump($basketPrice);
         $deliveryPrice = 0;
         foreach (self::PRICE_STEPS as $step => $price) {
             if ($basketPrice < $step) {
