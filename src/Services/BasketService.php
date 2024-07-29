@@ -19,9 +19,9 @@ class BasketService
     /**
      * @throws JsonException
      */
-    final public function create(): void
+    final public function create(): string
     {
-        $this->basket->create();
+        return $this->basket->create();
     }
 
     final public function addDefaultItem(string $id):void
